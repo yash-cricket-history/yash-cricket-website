@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yash Cricket History</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #eef5ff;
+  color: #172b4d;
+  text-align: center;
+}
+header {
+  background: #063b25;
+  color: white;
+  padding: 25px 10px;
+}
+h1 { margin: 5px; }
+.date {
+  background: white;
+  padding: 12px;
+  margin: 15px;
+  border-radius: 10px;
+}
+.card {
+  background: white;
+  margin: 15px;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px #ccc;
+}
+a {
+  display: inline-block;
+  background: #087b45;
+  color: white;
+  padding: 12px 20px;
+  margin: 8px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+footer {
+  background: #063b25;
+  color: white;
+  padding: 18px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>🏏 YASH CRICKET HISTORY</h1>
+  <p>क्रिकेट की दुनिया में आपका स्वागत है</p>
+</header>
+
+<div class="date">
+  📅 आज की तारीख: <span id="today"></span>
+</div>
+
+<div class="card">
+  <h2>🏆 Live Cricket Scores</h2>
+  <p>आज के मैचों का स्कोर देखने के लिए यहाँ जाएँ।</p>
+  <a href="https://www.espncricinfo.com/live-cricket-score" target="_blank">
+  Live Score देखें
+  </a>
+</div>
+
+<div class="card">
+  <h2>📰 Latest Cricket News</h2>
+  <p>क्रिकेट की ताज़ा खबरें पढ़ें।</p>
+  <a href="https://www.espncricinfo.com/" target="_blank">
+  Cricket News
+  </a>
+</div>
+
+<div class="card">
+  <h2>🇮🇳 Indian Cricket</h2>
+  <p>भारतीय क्रिकेट टीम की जानकारी।</p>
+  <a href="https://www.bcci.tv/" target="_blank">
+  BCCI देखें
+  </a>
+</div>
+
+<div class="card">
+  <h2>🏏 Cricket History</h2>
+  <p>क्रिकेट का इतिहास, रिकॉर्ड और महान खिलाड़ी।</p>
+  <a href="https://www.espncricinfo.com/records" target="_blank">
+  Cricket Records
+  </a>
+</div>
+
+<div class="card">
+  <h2>👑 Website Owner</h2>
+  <h3>YASH</h3>
+  <p>Future Cricketer 🏏</p>
+</div>
+
+<footer>
+  © 2026 Yash Cricket History
+</footer>
+
+<script>
+const today = new Date();
+document.getElementById("today").textContent =
+today.toLocaleDateString("hi-IN", {
+  day: "numeric",
+  month: "long",
+  year: "numeric"
+});
+</script>
+
+</body>
+</html>
